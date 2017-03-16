@@ -1,7 +1,8 @@
 <div>
     <div class="form-group">
         <label for="pairSelect">Pair</label>
-        <select class="form-control" id="pairSelect" [(ngModel)]="selectedPair">
+        <select class="form-control" id="pairSelect" [(ngModel)]="selectedPair"
+                [disabled]="(isConnected | async) || (isConnecting | async)">
             <option *ngFor="let pair of pairs" [ngValue]="pair">{{pair}}</option>
         </select>
     </div>
