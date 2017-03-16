@@ -44,8 +44,8 @@ export class BitfinexService {
                 bidSize: msg[2],
                 ask: msg[3],
                 askSize: msg[4],
-                lastPrice: msg[5],
-                volume: msg[6],
+                lastPrice: msg[7],
+                volume: msg[8],
             });
         }
     };
