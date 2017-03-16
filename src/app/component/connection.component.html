@@ -1,0 +1,10 @@
+<div class="form-group">
+    <label for="pairSelect">Pair</label>
+    <select class="form-control" id="pairSelect" [(ngModel)]="selectedPair">
+        <option *ngFor="let pair of pairs" [ngValue]="pair">{{pair}}</option>
+    </select>
+</div>
+<connect-button [connected]="isConnected | async"
+                [disabled]="isConnecting | async"
+                (onConnectClicked)="connectOrDisconnect($event)">
+</connect-button>

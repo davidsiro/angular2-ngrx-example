@@ -1,0 +1,60 @@
+{
+  "name": "angular2-ngrx-example",
+  "version": "0.0.1",
+  "scripts": {
+    "clean": "rimraf dist",
+    "compile": "tsc",
+    "start": "webpack-dev-server --config webpack.js --progress --profile --watch --port 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:davidsiro/angular2-ngrx-example.git"
+  },
+  "author": "David Siro",
+  "license": "MIT",
+  "description": "An example ng2 application with ngrx-store and websockets",
+  "dependencies": {
+    "@angular/common": "2.4.1",
+    "@angular/compiler": "2.4.1",
+    "@angular/compiler-cli": "2.4.1",
+    "@angular/core": "2.4.1",
+    "@angular/forms": "2.4.1",
+    "@angular/http": "2.4.1",
+    "@angular/platform-browser": "2.4.1",
+    "@angular/platform-browser-dynamic": "2.4.1",
+    "@angular/router": "3.4.1",
+    "@ngrx/core": "^1.0.0",
+    "@ngrx/effects": "^2.0.0",
+    "@ngrx/store": "^2.0.0",
+    "@ngrx/store-devtools": "^3.1.0",
+    "@types/core-js": "0.9.35",
+    "@types/js-base64": "^2.1.5",
+    "@types/node": "6.0.56",
+    "bootstrap": "4.0.0-alpha.6",
+    "core-js": "2.4.1",
+    "js-base64": "^2.1.9",
+    "rxjs": "5.0.2",
+    "zone.js": "0.7.4"
+  },
+  "devDependencies": {
+    "angular2-template-loader": "0.6.0",
+    "awesome-typescript-loader": "3.0.0-beta.17",
+    "css-loader": "0.26.1",
+    "extract-text-webpack-plugin": "2.0.0-beta.4",
+    "file-loader": "0.9.0",
+    "html-loader": "0.4.4",
+    "html-webpack-plugin": "2.26.0",
+    "jquery": "3.1.1",
+    "moment": "2.17.1",
+    "ngrx-store-freeze": "^0.1.6",
+    "node-sass": "3.13.1",
+    "sass-loader": "4.1.1",
+    "source-map-loader": "0.1.5",
+    "style-loader": "0.13.1",
+    "to-string-loader": "^1.1.5",
+    "ts-helpers": "1.1.2",
+    "typescript": "2.1.4",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
+  }
+}

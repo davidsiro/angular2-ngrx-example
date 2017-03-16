@@ -1,0 +1,10 @@
+.idea/
+*.iml
+dist/
+node_modules
+npm-debug*
+*.log
+*.js
+*.js.map
+*.d.ts
+!webpack.js
