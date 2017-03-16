@@ -12,6 +12,7 @@ import {ConnectionEffects} from "./effects/connection";
 import {BitfinexService} from "./service/bitfinex.service";
 import {ConnectButtonComponent} from "./component/connect-button.component";
 import {TickerComponent} from "./component/ticker.component";
+import {TrendComponent} from "./component/trend.component";
 
 @NgModule({
     imports: [
@@ -26,7 +27,8 @@ import {TickerComponent} from "./component/ticker.component";
         AppComponent,
         ConnectionComponent,
         ConnectButtonComponent,
-        TickerComponent
+        TickerComponent,
+        TrendComponent
     ],
     providers: [BitfinexService],
     bootstrap: [AppComponent]
