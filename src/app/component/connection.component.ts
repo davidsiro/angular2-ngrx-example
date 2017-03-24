@@ -1,4 +1,4 @@
-import {Component} from "@angular/core";
+import {ChangeDetectionStrategy, Component} from "@angular/core";
 import {Store} from "@ngrx/store";
 import {State} from "../reducers/index";
 import {ConnectRequestAction} from "../actions/connection";
@@ -7,7 +7,8 @@ import {DisconnectRequestAction} from "../actions/connection";
 
 @Component({
     selector: 'connection',
-    templateUrl: './connection.component.html'
+    templateUrl: './connection.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ConnectionComponent {
 

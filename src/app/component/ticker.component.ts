@@ -1,4 +1,4 @@
-import {Component} from "@angular/core";
+import {ChangeDetectionStrategy, Component} from "@angular/core";
 import {Store} from "@ngrx/store";
 import {State} from "../reducers/index";
 import {Observable} from "rxjs";
@@ -7,7 +7,8 @@ import {Trend} from "../models/trend";
 
 @Component({
     selector: 'ticker',
-    templateUrl: './ticker.component.html'
+    templateUrl: './ticker.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TickerComponent {
 
