@@ -34,8 +34,8 @@ export class BitfinexService {
         const msg = JSON.parse(event.data);
 
         if (msg.event === 'subscribed') {
-            console.log("Subscribed to ticker channel " + this.channel);
             this.channel = msg.chanId;
+            console.log("Subscribed to ticker channel " + this.channel);
         } else if (this.channel && msg[0] === this.channel && msg[1] !== 'hb') {
             console.log("Message received " + event.data);
             // ignore hearbeats and get only the ticks
